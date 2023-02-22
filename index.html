@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Running-Calculator</title>
+</head>
+<body>
+    <header>
+      <h1 class="title">How many calories are burned while running (calculator)</h1>
+    </header>
+    <main>
+      <h3>Calorie consumption during running depending on the distance:</h3> 
+      <section class="distance">
+        <form id="myForm">
+          <div>
+           <label for="weight">Your weight:</label>
+           <input name="weight" id="distance-weight" placeholder="Your weight"> kilogram
+          </div>
+          <br>
+          <div>
+           <label for="distance">You ran:</label>
+           <input name="distance" id="distance-run" placeholder="You ran"> kilometers
+          </div>
+          <br>
+          <div>
+            <label for="burned-calories">Calories burned:</label>
+            <div class="burned">
+              <p></p>
+            </div>
+          </div>
+          <button onclick="runDistance()">calculate</button>
+        </form>
+      </section>
+      <br>
+      <h3>Calorie consumption while running over time:</h3>
+      <section class="distance">
+        <form id="myFormHeart">
+          <div>
+            <label for="weight">Running time:</label>
+            <input name="weight" id="running-time" placeholder="Your running time"> hours
+           </div>
+           <br>
+          <div>
+           <label for="weight">Your weight:</label>
+           <input name="weight" id="heart-weight" placeholder="Your weight"> kilogram
+          </div>
+          <br>
+          <div>
+           <label for="distance">You ran:</label>
+           <input name="distance" id="distance-run-time" placeholder="You ran"> kilometers
+          </div>
+          <br>
+          <div>
+            <label for="burned-calories">Calories burned:</label>
+            <div class="burned-pulse">
+              <p></p>
+            </div>
+          </div>
+          <button onclick="runDistanceHeart()">calculate</button>
+        </form>
+      </section>
+    </main>
+      <script src="./main.js"></script>
+</body>
+</html>
