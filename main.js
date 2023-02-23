@@ -1,34 +1,17 @@
-
 function runDistance(){
-  let burned = document.querySelector('.burned');
-  let weight = document.getElementById("distance-weight").value;
-  let distance = document.getElementById("distance-run").value;
-  let form = document.querySelector('#myForm'); 
-  let result = weight * distance;
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-  })
+  const burned = document.querySelector('.burned');
+  const result = document.getElementById("distance-weight").value * document.getElementById("distance-run").value;
 
   burned.innerHTML = `
   <p>${result} calories</p>
   `
 }
 
-function runDistanceHeart(){
-  
-  let burned = document.querySelector('.burned-pulse');
-  let heartWeight = document.getElementById("heart-weight").value;
-  let distance = document.getElementById("distance-run-time").value;
-  let runHours = document.getElementById("running-time").value;
-  let myForm = document.querySelector('#myFormHeart'); 
-  let caloriesKmPerKg = 0.75 * heartWeight;
-  let result = caloriesKmPerKg * runHours * distance;
-  
-  myForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-  })
 
+function runDistanceHeart(){
+  const burned = document.querySelector('.burned-pulse');
+  const result = 0.75 * document.getElementById("heart-weight").value * document.getElementById("distance-run-time").value * document.getElementById("running-time").value;
+  
   burned.innerHTML = `
   <p>${result} calories</p>
   `
