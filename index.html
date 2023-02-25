@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-      <h1 class="title">How many calories are burned while running (calculator)</h1>
+      <h1 class="title"><strong>How many calories are burned while running (calculator)</strong></h1>
     </header>
     <main>
-      <h3>Calorie consumption during running depending on the distance:</h3> 
+      <h3><strong>Calorie consumption during running depending on the distance:</strong></h3> 
       <section class="distance">
           <div>
            <label for="weight">Your weight:</label>
@@ -24,16 +24,16 @@
            <input name="distance" id="distance-run" placeholder="You ran"> kilometers
           </div>
           <br>
-          <div>
+          <div class="render-info">
             <label for="burned-calories">Calories burned:</label>
             <div class="burned">
               <p></p>
             </div>
           </div>
-          <button onclick="runDistanceRenderOne()">calculate</button>
+          <button onclick="runDistanceRenderOne()">Calculate</button>
       </section>
       <br>
-      <h3>Calorie consumption while running over time:</h3>
+      <h3><strong>Calorie consumption while running over time:</strong></h3>
       <section class="distance">
           <div>
             <label for="weight">Running time:</label>
@@ -50,15 +50,16 @@
            <input name="distance" id="distance-run-time" placeholder="You ran"> kilometers
           </div>
           <br>
-          <div>
+          <div class="render-info">
             <label for="burned-calories">Calories burned:</label>
             <div class="burned-pulse">
-              <p></p>
+              <p value="0"></p>
             </div>
           </div>
-          <button onclick="runDistanceRenderTwo()">calculate</button>
+          <button onclick="runDistanceRenderTwo()">Calculate</button>
       </section>
     </main>
+      <script src="./caloriescalculator.js"></script>
       <script src="./main.js"></script>
 </body>
 </html>
